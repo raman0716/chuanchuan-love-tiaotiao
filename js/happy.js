@@ -39,8 +39,6 @@ $(function () {
     $(this).hide()
 
     $('#code').show().typewriter()
-
-    $('audio')[0].play()
   })
 })
 $(function () {
@@ -58,6 +56,7 @@ $(function () {
     .click(function () {
       count += 1
       var idx = Math.floor(Math.random() * 5)
+      $('audio')[0].play()
       if (count >= 8) {
         $(this).hide()
         $('.begin').show()
